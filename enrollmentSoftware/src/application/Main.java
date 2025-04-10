@@ -22,16 +22,15 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void loadView(String fxmlFile) {
 		try {
-		FXMLLoader loader = new FXMLLoader(Main.class.getResource(fxmlFile));
-		rootLayout.setCenter(loader.load());
+			FXMLLoader loader = new FXMLLoader(Main.class.getResource(fxmlFile));
+			rootLayout.setCenter(loader.load());
 		} catch (Exception e) {
-		e.printStackTrace();
+			e.printStackTrace();
 		}
-		}
-
+	}
 
 	public static void main(String[] args) {
 		launch(args);

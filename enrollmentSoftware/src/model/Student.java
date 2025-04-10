@@ -36,5 +36,14 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", email=" + email + "]";
+	}
+    
+    public void InfoEstudiante() {
+    	System.out.println(toString());
+    }
 }
 
